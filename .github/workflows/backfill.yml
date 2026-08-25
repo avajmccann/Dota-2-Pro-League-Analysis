@@ -1,0 +1,28 @@
+name: Dota 2 Historical Backfill
+
+on:
+  workflow_dispatch:   # manual trigger only -- deliberately no `schedule:` here.
+                        # This is a one-time job, not a recurring one, so it
+                        # should never fire on its own.
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r ingestion/requirements.txt
+
+      - name: Run backfill script
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+        run: python ingestion/backfill.py

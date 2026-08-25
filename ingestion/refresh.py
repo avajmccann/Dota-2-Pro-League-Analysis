@@ -11,8 +11,8 @@ def refresh():
     bucket = get_gcs_bucket()
 
     now = datetime.datetime.now()
-    current_year = now.year
-    current_month = now.month
+    current_year = 2026#now.year
+    current_month = 7#now.month
     month_yyyymm = f"{current_year}{current_month:02d}"
     month_mm = f"{current_month:02d}"
 

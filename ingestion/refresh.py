@@ -36,6 +36,5 @@ def refresh():
 
     print(f"\nRefresh completed successfully for {current_year}-{month_mm}.")
 
-
 if __name__ == "__main__":
     refresh()

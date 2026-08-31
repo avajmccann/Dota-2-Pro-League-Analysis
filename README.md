@@ -17,7 +17,8 @@ Business Intelligence project analyzing **210k+ matches** across **4,867 teams**
 
 ## Dashboard
 
-<img width="2400" height="1300" alt="image" src="https://github.com/user-attachments/assets/3e8cb31a-f436-4e87-92ce-11f72cdfbf45" />
+<img width="2400" height="1300" alt="image" src="https://github.com/user-attachments/assets/86f08cf0-0c02-4e2d-bf8c-6bf2d9e3162b" />
+
 
 ## Data & Architecture
 

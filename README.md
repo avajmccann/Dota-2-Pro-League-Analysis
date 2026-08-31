@@ -1,2 +1,36 @@
 # Dota 2 Pro League Analysis
-This project analyzes Dota 2 pro league player and match data.
+
+Business Intelligence project analyzing 210k+ matches across 4,867 teams and 1,552 leagues from 2016-2026, built to identify top heroes and player/match statistics during the current year.
+
+[Tableau Public Viz](https://public.tableau.com/app/profile/ava.mccann/viz/2025DomesticFlightAnalysis/Airports)
+
+## Business Questions
+
+- What are the top heroes, by picks and bans? Are certain heroes picked or feared more?
+
+## Key Findings
+
+## Automation
+
+## Dashboard
+
+## Data & Architecture
+
+| Layer | Contents |
+|---|---|
+| **staging** | x |
+| **analysis** | x |
+
+**Sources:** Kaggle DOTA 2 Pro League Dataset: https://www.kaggle.com/datasets/bwandowando/dota-2-pro-league-matches-2023
+
+## Repo Structure
+
+```
+transformations/   # pipeline
+analysis/           # exploratory + business-question queries against the gold layer
+dashboard/          # dashboard exports
+```
+
+## Future Improvements
+
+=======
